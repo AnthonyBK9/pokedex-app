@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import PokeCard from './PokeCard'
+import images from '../../assets/js/images'
 
 const PokedexScreen = () => {
 
@@ -20,8 +21,16 @@ const PokedexScreen = () => {
 
   return (
     <div>
-      <h1>Pokedex</h1>
-      <h2>Hola {nameUser}, bienvenido a la pokedex </h2>
+      <div className="bar-header">
+        <div className="bar-red"></div>
+        <div className="bar-black"></div>
+        <div className="poke-img">    
+          <img src={images[3].img} alt={images[3].name} />
+        </div>
+        <div className="circle-a"></div>
+        <div className="circle-b"></div>
+      </div>
+      <h2 className="poke-user">Hola {nameUser}, bienvenido a la pokedex </h2>
       {
         pokemons?.map(pokemon => (
           <PokeCard 

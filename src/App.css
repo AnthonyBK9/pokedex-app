@@ -38,3 +38,62 @@
     color: rgb(199, 202, 30);
     -webkit-text-stroke: 4px #163f8b;
 }
+
+/* Poke - Home Page */
+
+.bar-header {
+    background: blue;
+    width: 100%;
+    height: 100px;
+}
+
+.bar-red {
+    position: absolute;
+    width: 1440px;
+    height: 123.18px;
+    left: 0px;
+    top: 0px;
+
+    background: #DD1A1A;
+}
+
+.bar-black {
+    position: absolute;
+    width: 1440px;
+    height: 49.7px;
+    left: 0px;
+    top: 111.3px;
+    background: #0C0C0C;
+}
+
+.poke-img {
+    position: absolute;
+    width: 431px;
+    height: 76px;
+    left: 133px;
+    top: 47px;
+}
+
+.circle-a {
+    box-sizing: border-box;
+    position: absolute;
+    width: 117px;
+    height: 117px;
+    left: 1038px;
+    top: 78px;
+    background: #FFFFFF;
+    border: 12px solid #000000;
+    border-radius: 50%;
+}
+
+.circle-b {
+    box-sizing: border-box;
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 1065px;
+    top: 105px;
+    background: #212121;
+    border: 12px solid #000000;
+    border-radius: 50%;
+}
