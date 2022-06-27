@@ -3,7 +3,7 @@ import React from 'react'
 const InputPokedex = () => {
   return (
     <form>
-        <input type="text" placeholder="searh pokemon"/>
+        <input type="text" placeholder="Searh Pokemon"/>
     </form>
   )
 }

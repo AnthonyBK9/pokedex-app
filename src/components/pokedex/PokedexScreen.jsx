@@ -31,7 +31,7 @@ const PokedexScreen = () => {
         <div className="circle-a"></div>
         <div className="circle-b"></div>
       </div>
-      <h2 className="poke-user"><span>Hello! {nameUser}</span>, bienvenido a la pokedex </h2>
+      <h2 className="poke-user"><span>Hello! {nameUser}</span>, welcome to the Pokedex</h2>
       <div>
         <InputPokedex />
       </div>

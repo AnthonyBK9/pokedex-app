@@ -9,8 +9,8 @@ const HomeScreen = () => {
         <img src={images[1].img} alt={images[1].name} />
       </div>
       <div className="pokedex-intro">
-        <h1 className="pokedex-title">Pokedex</h1>
-        <h4 className="pokedex-content">¡Hola Entrenador!</h4>
+        <img src={images[3].img} alt={images[3].name} />
+        <h4 className="poke-content">Hello Trainer!</h4>
         <InputHome />
       </div>
       <div className="pokecoach-woman">

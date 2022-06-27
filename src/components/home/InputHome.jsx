@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { setNameGlobal } from '../../store/slices/nameUser.slice'
 
+
 const InputHome = () => {
 
   const {handleSubmit, reset, register} = useForm()
@@ -20,9 +21,9 @@ const InputHome = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(submit)}>
-      <input placeholder='Ingresa tu nombre de entrenador' type="text" {...register('nameUser')} />
-      <button>Go to Pokedex</button>
+    <form onSubmit={handleSubmit(submit)} className="poke-form">
+      <input className="poke-input" placeholder='Give me your name to start' type="text" {...register('nameUser')} />
+      <button className="poke-btn">Go</button>
     </form>
   )
 }

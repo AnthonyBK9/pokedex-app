@@ -1,6 +1,7 @@
 import React from 'react'
 
-const PokeInfoScreen = () => {
+const PokeInfoScreen = (id) => {
+  console.log(id);
   return (
     <div>
       <h2>Pokemon!!</h2>
