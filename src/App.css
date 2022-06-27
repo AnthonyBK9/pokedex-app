@@ -224,6 +224,8 @@ input::placeholder {
     align-items: center;
     width: max-content;
     margin: 0 auto;
+    font-family: 'Teko', sans-serif;
+    margin-top: 20px;
   }
   .pagination-number-container{
     display: flex;

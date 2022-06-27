@@ -23,7 +23,7 @@ const PokePagination = ({arrPages, currentPage, setCurrentPage, quantityPages}) 
   
     return (
       <div className='pagination-container'>
-        <div onClick={prevPage} className='pagination-prev-next'>&#60;</div>
+        <div onClick={prevPage} className='pagination-prev-next'><i className="fa-solid fa-caret-left"></i></div>
         <ul ref={listNumber} className='pagination-number-container'>
           {
             arrPages?.map(num => (
@@ -35,7 +35,7 @@ const PokePagination = ({arrPages, currentPage, setCurrentPage, quantityPages}) 
             ))
           }
         </ul>
-        <div onClick={nextPage} className='pagination-prev-next'>&#62;</div>
+        <div onClick={nextPage} className='pagination-prev-next'><i className="fa-solid fa-caret-right"></i></div>
       </div>
     )
 }
