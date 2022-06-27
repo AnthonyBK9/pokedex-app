@@ -103,6 +103,17 @@ input::placeholder {
     margin-left: 40px;
 }
 
+.input-pokeScreen {
+    margin-left: 40px;
+}
+
+.input-pokeScreen input {
+    border:1px solid #a81313;
+    border-radius: 5px;
+    height: 30px;
+    width: 30%;
+}
+
 .poke-user span{
     color: rgb(173, 40, 40);
 }
@@ -171,6 +182,7 @@ input::placeholder {
 
 .card-pokemon {
     background:#85c9e4;
+    border-radius: 10px;
     width: 25%;
 }
 
@@ -203,3 +215,46 @@ input::placeholder {
 .stat span {	
     font-weight: 700;
 }
+
+/* Pagination */
+
+.pagination-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .pagination-number-container{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+  }
+  .pagination-prev-next{
+    font-size: 30px;
+    color: #fcfcfc;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 50, 104);
+    border-radius: 8px;
+  }
+  .page-number {
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #163f8b;
+  }
+  .page-active{
+    background-color: rgb(206, 25, 25);
+  }

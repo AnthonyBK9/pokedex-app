@@ -15,7 +15,7 @@ const PokeCard = ({url}) => {
 
   const navigate = useNavigate()
   const clickCard = () => navigate(`/pokemon/${pokemon.id}`)
-  console.log(pokemon)
+  // console.log(pokemon)
   
   return (
     <article onClick={clickCard} className='card-pokemon'>
@@ -23,7 +23,7 @@ const PokeCard = ({url}) => {
         <img src={pokemon?.sprites.other['official-artwork'].front_default} alt={pokemon?.name} />
         <h3>{pokemon?.name}</h3>
         <h4>Type</h4>
-        <p>{pokemon?.types[0].type.name} - {pokemon?.types[1]?.type?.name}</p>
+        <p>{pokemon?.types[0].type.name}    {pokemon?.types[1]?.type?.name}</p>
         {/* <p>{pokemon?.types[1].type.name}</p> */}
       </div>
         <div className="stats">

@@ -6,7 +6,6 @@ import PokedexScreen from './components/pokedex/PokedexScreen'
 import PokeInfoScreen from './components/pokemonInfo/PokeInfoScreen'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
