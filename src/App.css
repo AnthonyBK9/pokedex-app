@@ -170,7 +170,7 @@ input::placeholder {
 }
 
 .card-pokemon {
-    background:rgb(31, 113, 145);
+    background:#85c9e4;
     width: 25%;
 }
 
@@ -186,4 +186,20 @@ input::placeholder {
 .card-poke-header h3 {
     color: white;
     font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.stat p {
+    color: white;
+}
+
+.stat span {	
+    font-weight: 700;
 }
