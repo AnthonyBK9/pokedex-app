@@ -100,6 +100,7 @@ input::placeholder {
 .poke-user { 
     font-weight: 700;
     font-family: 'Teko', sans-serif;
+    margin-left: 40px;
 }
 
 .poke-user span{
@@ -116,7 +117,6 @@ input::placeholder {
     height: 123.18px;
     left: 0px;
     top: 0px;
-
     background: #DD1A1A;
 }
 
@@ -159,4 +159,31 @@ input::placeholder {
     background: #212121;
     border: 12px solid #000000;
     border-radius: 50%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card-pokemon {
+    background:rgb(31, 113, 145);
+    width: 25%;
+}
+
+.card-poke-header {
+    text-align: center;
+}
+
+.card-poke-header img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card-poke-header h3 {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }

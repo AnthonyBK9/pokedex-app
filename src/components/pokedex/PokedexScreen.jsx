@@ -12,7 +12,7 @@ const PokedexScreen = () => {
   const [pokemons, setPokemons] = useState()
 
   useEffect(() => {
-    const URL_POKEMONS = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=10'
+    const URL_POKEMONS = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=12'
     axios.get(URL_POKEMONS)
       .then(res => setPokemons(res.data.results))
       .catch(err => console.log(err))
@@ -35,14 +35,16 @@ const PokedexScreen = () => {
       <div>
         <InputPokedex />
       </div>
-      {
-        pokemons?.map(pokemon => (
-          <PokeCard 
-            key={pokemon.url}
-            url={pokemon.url}
-          />
-        ))
-      }
+      <div className="card-container">
+        {
+          pokemons?.map(pokemon => (
+            <PokeCard 
+              key={pokemon.url}
+              url={pokemon.url}
+            />
+          ))
+        }
+      </div>
     </div>
   )
 }
