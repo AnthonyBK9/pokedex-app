@@ -181,13 +181,119 @@ input::placeholder {
 }
 
 .card-pokemon {
-    background:#85c9e4;
+    background: #9ca896;
     border-radius: 10px;
-    width: 25%;
+    width: 21%;
+}
+
+.bg-normal {
+    background: #735159;
+}
+
+.bg-fighting {
+    background: #973f26;
+}
+
+.bg-flying {
+    background: #48677b;
+}
+
+.bg-poison {
+    background: #5b2d86;
+}
+
+.bg-ground {
+    background: #765833;
+}
+
+.bg-rock {
+    background: #361c15;
+}
+
+.bg-bug {
+    background: #597a33;
+}
+
+.bg-ghost {
+    background: #222452;
+}
+
+.bg-steel {
+    background: #5d736c;
+}
+
+.bg-fire {
+    background: #bf3434;
+}
+
+.bg-water {
+    background: #70b7fa;
+}
+
+.bg-grass {
+    background: #21a586;
+}
+
+.bg-electric {
+    background: #fbbd08;
+}
+
+.bg-psychic {
+    background: #b98544;
+}
+
+.bg-ice {
+    background: #86d2f4;
+}
+
+.bg-dragon {
+    background: #448a94;
+}
+
+.bg-dark {
+    background: #191c1b;
+}
+
+.bg-fairy {
+    background: #8f2c4e;
 }
 
 .card-poke-header {
+   text-align: center;
+}
+
+.card-img {
     text-align: center;
+}
+
+.card-content {
+    text-align: center;
+    padding-right: 40px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card-type p {
+    padding: 3px 5px;
+}
+
+.type-a {
+    background: #0C0C0C;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.type-b {
+    background: #552f92;
+    color: #fff;
+    border-radius: 3px;
 }
 
 .card-poke-header img{
@@ -206,10 +312,13 @@ input::placeholder {
     align-items: center;
     gap: 30px;
     font-family: 'Kdam Thmor Pro', sans-serif;
+    background: #c4c0c0;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px 6px;
 }
 
 .stat p {
-    color: white;
+    color: rgb(190, 102, 19);
 }
 
 .stat span {	
