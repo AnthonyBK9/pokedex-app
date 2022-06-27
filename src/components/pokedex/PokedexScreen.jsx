@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import PokeCard from './PokeCard'
 import images from '../../assets/js/images'
+import InputPokedex from './InputPokedex'
 
 const PokedexScreen = () => {
 
@@ -11,7 +12,7 @@ const PokedexScreen = () => {
   const [pokemons, setPokemons] = useState()
 
   useEffect(() => {
-    const URL_POKEMONS = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100'
+    const URL_POKEMONS = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=10'
     axios.get(URL_POKEMONS)
       .then(res => setPokemons(res.data.results))
       .catch(err => console.log(err))
@@ -30,7 +31,10 @@ const PokedexScreen = () => {
         <div className="circle-a"></div>
         <div className="circle-b"></div>
       </div>
-      <h2 className="poke-user">Hola {nameUser}, bienvenido a la pokedex </h2>
+      <h2 className="poke-user"><span>Hello! {nameUser}</span>, bienvenido a la pokedex </h2>
+      <div>
+        <InputPokedex />
+      </div>
       {
         pokemons?.map(pokemon => (
           <PokeCard 

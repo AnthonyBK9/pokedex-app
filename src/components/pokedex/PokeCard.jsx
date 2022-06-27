@@ -13,15 +13,18 @@ const PokeCard = ({url}) => {
   }, [])
 
   const navigate = useNavigate()
-
   const clickCard = () => navigate(`/pokemon/${pokemon.id}`)
-
   console.log(pokemon)
-
+  
   return (
     <article onClick={clickCard} className='card-pokemon'>
-      <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
-      <h3>{pokemon?.name}</h3>
+      <div>
+        <h3>{pokemon?.name}</h3>
+        <img src={pokemon?.sprites.other['official-artwork'].front_default} alt={pokemon?.name} />
+        <div className="stats">
+          <p>{}</p>
+        </div>
+      </div>
     </article>
   )
 }

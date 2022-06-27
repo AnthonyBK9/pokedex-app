@@ -9,7 +9,6 @@ const InputHome = () => {
   const {handleSubmit, reset, register} = useForm()
 
   const dispatch = useDispatch()
-
   const navigate = useNavigate()
 
   const submit = data => {

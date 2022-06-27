@@ -2,7 +2,9 @@ import React from 'react'
 
 const PokeInfoScreen = () => {
   return (
-    <div>PokeInfoScreen</div>
+    <div>
+      <h2>Pokemon!!</h2>
+    </div>
   )
 }
 
