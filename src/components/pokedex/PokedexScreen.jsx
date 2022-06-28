@@ -18,9 +18,7 @@ const PokedexScreen = () => {
       .then(res => setPokemons(res.data.results))
       .catch(err => console.log(err))
   }, [])
-
-  console.log(pokemons?.length)
-  console.log(pokemons)
+  
   let arrPokemons = [];
   const pokemonPerPage = 12;
     if (pokemons?.length <= pokemonPerPage) {
@@ -67,7 +65,6 @@ const PokedexScreen = () => {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         quantityPages={quantityPages}
-      
       />
       <div className="card-container">
         {
@@ -79,6 +76,12 @@ const PokedexScreen = () => {
           ))
         }
       </div>
+      <PokePagination 
+        arrPages={arrPages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        quantityPages={quantityPages}
+      />
     </div>
   )
 }
