@@ -31,13 +31,13 @@ const PokeCard = ({url}) => {
       return pokeColor = bg.bgColor;
     }
   });
-  const poketype2 = pokemon?.types[0].type.name;
-  let pokeColor2;
-  bgColor.forEach(bg => {
-    if (bg.bgColor === poketype2) {
-      return pokeColor2 = bg.bgColor;
-    }
-  });
+  // const poketype2 = pokemon?.types[0].type.name;
+  // let pokeColor2;
+  // bgColor.forEach(bg => {
+  //   if (bg.bgColor === poketype2) {
+  //     return pokeColor2 = bg.bgColor;
+  //   }
+  // });
   return (
     <article onClick={clickCard} className={` card-pokemon bg-${pokeColor}`}>
       <div className="card-poke-header">

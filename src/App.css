@@ -326,11 +326,15 @@ input::placeholder {
     background: #21a586;
     border: 4px solid #ffffff;
     border-radius: 15px;
-    width: 60%;
-    margin: 0 50px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     font-family: 'Teko', sans-serif;
     margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
 .pokeinfo-header h2 {
@@ -343,7 +347,7 @@ input::placeholder {
 }
 
 .pokeinfo-header img {
-    width: 30%;
+    width: 70%;
 }
 
 .pokeinfo-name {
@@ -413,6 +417,40 @@ input::placeholder {
     font-size: 25px;
 }
 
+/* Movements */
+
+.poke-movements {
+    background:rgb(255, 255, 255);
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 4px solid #ffffff;
+}
+
+.poke-movements h3 {
+    font-size: 30px;
+    color: #536cc0;	
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+}
+
+.poke-movements-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movements p{
+    background: #dcdcdd;
+    padding: 5px 3px;
+    border-radius: 20px;
+    width: 80%;
+    color:rgb(46, 44, 44);
+    margin: 5px 15px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
 
 /* ================ Color Pokemon Type ===================== */
 
