@@ -16,7 +16,7 @@ const PokeCard = ({url}) => {
 
   const navigate = useNavigate()
   const clickCard = () => navigate(`/pokedex/${pokemon.id}`)
-  console.log(pokemon)
+  // console.log(pokemon)
   bgColor.forEach(bg => {
     if (pokemon?.types[0].type.name === bg.bgColor) {
         return `card-pokemon bg-${bg.bgColor}`;
@@ -24,8 +24,22 @@ const PokeCard = ({url}) => {
       return 'card-pokemon'
     }
   });
+  const poketype = pokemon?.types[0].type.name;
+  let pokeColor;
+  bgColor.forEach(bg => {
+    if (bg.bgColor === poketype) {
+      return pokeColor = bg.bgColor;
+    }
+  });
+  const poketype2 = pokemon?.types[0].type.name;
+  let pokeColor2;
+  bgColor.forEach(bg => {
+    if (bg.bgColor === poketype2) {
+      return pokeColor2 = bg.bgColor;
+    }
+  });
   return (
-    <article onClick={clickCard} className={(pokemon?.types[0].type.name === bgColor[11].bgColor )? `card-pokemon bg-${bgColor[11].bgColor}`: 'card-pokemon'}>
+    <article onClick={clickCard} className={` card-pokemon bg-${pokeColor}`}>
       <div className="card-poke-header">
         <div className="card-img">
           <img src={pokemon?.sprites.other['official-artwork'].front_default} alt={pokemon?.name} />
@@ -34,8 +48,7 @@ const PokeCard = ({url}) => {
           <h3>{pokemon?.name}</h3>
           <h4>Type</h4>
           <div className="card-type">
-            <p className="type-a">{pokemon?.types[0].type.name} </p>
-            <p className="type-b">{pokemon?.types[1]?.type?.name}</p>
+            <p>{pokemon?.types[0].type.name} { pokemon?.types[1]?.type.name !== undefined ? `/ ${pokemon?.types[1]?.type.name}`: '' }</p>
           </div>
         </div>
       </div>

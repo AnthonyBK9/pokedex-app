@@ -186,78 +186,6 @@ input::placeholder {
     width: 21%;
 }
 
-.bg-normal {
-    background: #735159;
-}
-
-.bg-fighting {
-    background: #973f26;
-}
-
-.bg-flying {
-    background: #48677b;
-}
-
-.bg-poison {
-    background: #5b2d86;
-}
-
-.bg-ground {
-    background: #765833;
-}
-
-.bg-rock {
-    background: #361c15;
-}
-
-.bg-bug {
-    background: #597a33;
-}
-
-.bg-ghost {
-    background: #222452;
-}
-
-.bg-steel {
-    background: #5d736c;
-}
-
-.bg-fire {
-    background: #bf3434;
-}
-
-.bg-water {
-    background: #70b7fa;
-}
-
-.bg-grass {
-    background: #21a586;
-}
-
-.bg-electric {
-    background: #fbbd08;
-}
-
-.bg-psychic {
-    background: #b98544;
-}
-
-.bg-ice {
-    background: #86d2f4;
-}
-
-.bg-dragon {
-    background: #448a94;
-}
-
-.bg-dark {
-    background: #191c1b;
-}
-
-.bg-fairy {
-    background: #8f2c4e;
-}
-
 .card-poke-header {
    text-align: center;
 }
@@ -335,14 +263,16 @@ input::placeholder {
     margin: 0 auto;
     font-family: 'Teko', sans-serif;
     margin-top: 20px;
-  }
-  .pagination-number-container{
+}
+
+.pagination-number-container{
     display: flex;
     gap: 20px;
     list-style: none;
     padding-left: 0;
-  }
-  .pagination-prev-next{
+}
+
+.pagination-prev-next{
     font-size: 30px;
     color: #fcfcfc;
     cursor: pointer;
@@ -353,8 +283,9 @@ input::placeholder {
     align-items: center;
     background-color: rgb(21, 50, 104);
     border-radius: 8px;
-  }
-  .page-number {
+}
+  
+.page-number {
     font-size: 30px;
     color: #ffffff;
     cursor: pointer;
@@ -365,7 +296,194 @@ input::placeholder {
     align-items: center;
     border-radius: 8px;
     background: #163f8b;
-  }
-  .page-active{
+}
+
+.page-active{
     background-color: rgb(206, 25, 25);
-  }
+}
+
+  /* PokeInfoScreen */
+
+.pokeinfo {
+    background:rgb(199, 236, 235);
+    /* padding: 20px 0; */
+    padding-top: -10px;
+    padding-bottom: 50px
+}
+
+.pokemon-img {
+    width: 40%;
+    position: relative;
+    /* top: 35px;
+    left: 5%; */
+}
+
+.pokemon-img img {
+    width: 60%;
+}
+ 
+.pokeinfo-header {
+    background: #21a586;
+    border: 4px solid #ffffff;
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 50px;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    margin-top: -90px;
+}
+
+.pokeinfo-header h2 {
+    border: 1px solid #ccc;
+    max-width: 10%;
+    margin: 0 auto;
+    background:rgb(221, 221, 221);
+    border-radius: 3px;
+    color:rgb(21, 50, 104)
+}
+
+.pokeinfo-header img {
+    width: 30%;
+}
+
+.pokeinfo-name {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #dddddd;
+}
+
+.pokeinfo-body {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 50px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+}
+
+.pokeinfo-body h3 {	
+    font-size: 30px;
+    color: #212121;	
+}
+
+.poke-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    text-align: start;
+    font-size: 30px;
+}
+
+.hp {
+    color: rgb(46, 117, 18);
+}
+
+.attack {
+    color: rgb(201, 47, 47);
+}
+
+.defense {
+    color: rgb(50, 85, 131);
+}
+
+.speed {
+    color: rgb(128, 43, 136);
+}
+
+.sp-attack {
+    color: rgb(187, 187, 5)
+}
+
+.sp-defense {
+    color: rgb(206, 158, 25);
+}
+
+.stat p {
+    color: rgb(151, 151, 151);
+}
+
+.pokeinfo-type {
+    /* background:rgb(17, 43, 97); */
+    border-radius: 10px;
+    margin: 0 30px;
+    padding: 4px 10px;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* ================ Color Pokemon Type ===================== */
+
+.bg-normal {
+    background: #735159;
+}
+
+.bg-fighting {
+    background: #973f26;
+}
+
+.bg-flying {
+    background: #48677b;
+}
+
+.bg-poison {
+    background: #5b2d86;
+}
+
+.bg-ground {
+    background: #765833;
+}
+
+.bg-rock {
+    background: #361c15;
+}
+
+.bg-bug {
+    background: #597a33;
+}
+
+.bg-ghost {
+    background: #222452;
+}
+
+.bg-steel {
+    background: #5d736c;
+}
+
+.bg-fire {
+    background: #bf3434;
+}
+
+.bg-water {
+    background: #70b7fa;
+}
+
+.bg-grass {
+    background: #21a586;
+}
+
+.bg-electric {
+    background: #fbbd08;
+}
+
+.bg-psychic {
+    background: #b98544;
+}
+
+.bg-ice {
+    background: #86d2f4;
+}
+
+.bg-dragon {
+    background: #448a94;
+}
+
+.bg-dark {
+    background: #191c1b;
+}
+
+.bg-fairy {
+    background: #8f2c4e;
+}

@@ -5,6 +5,7 @@ import PokeCard from './PokeCard'
 import images from '../../assets/js/images'
 import InputPokedex from './InputPokedex'
 import PokePagination from './PokePagination'
+import Header from '../header/Header'
 
 const PokedexScreen = () => {
 
@@ -47,15 +48,7 @@ const PokedexScreen = () => {
 
   return (
     <div>
-      <div className="bar-header">
-        <div className="bar-red"></div>
-        <div className="bar-black"></div>
-        <div className="poke-img">    
-          <img src={images[3].img} alt={images[3].name} />
-        </div>
-        <div className="circle-a"></div>
-        <div className="circle-b"></div>
-      </div>
+      <Header />
       <h2 className="poke-user"><span>Hello! {nameUser}</span>, welcome to the Pokedex</h2>
       <div className="input-pokeScreen">
         <InputPokedex />
