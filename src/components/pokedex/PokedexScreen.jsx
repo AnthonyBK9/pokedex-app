@@ -10,7 +10,6 @@ import Header from '../header/Header'
 const PokedexScreen = () => {
 
   const nameUser = useSelector(state => state.nameUser)
-
   const [pokemons, setPokemons] = useState()
   const [currentPage, setCurrentPage] = useState(1)
   useEffect(() => {
@@ -19,7 +18,7 @@ const PokedexScreen = () => {
       .then(res => setPokemons(res.data.results))
       .catch(err => console.log(err))
   }, [])
-  
+  // console.log(pokemons)
   let arrPokemons = [];
   const pokemonPerPage = 12;
     if (pokemons?.length <= pokemonPerPage) {
@@ -51,7 +50,7 @@ const PokedexScreen = () => {
       <Header />
       <h2 className="poke-user"><span>Hello! {nameUser}</span>, welcome to the Pokedex</h2>
       <div className="input-pokeScreen">
-        <InputPokedex />
+      <InputPokedex/>
       </div>
       <PokePagination 
         arrPages={arrPages}

@@ -1,17 +1,21 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom'
 
 const InputPokedex = () => {
-  const { register, handleSubmit } = useForm();
+
+
+  const {handleSubmit, reset, register} = useForm()
+  const navigate = useNavigate()
+  const submit = (data) => {
+    console.log(data)
+    navigate(`/pokedex/${data.pokemon}`)
+  }
 
   return (
-    <form>
-        <input type="text" placeholder="Searh Pokemon"/>
-        <select>
-          <option value="valor1">Valor1</option>
-          <option value="valor1">Valor2</option>
-          <option value="valor1">Valor3</option>
-        </select>
+    <form onSubmit={handleSubmit(submit)}>
+        <input type="text" placeholder="Searh Pokemon" {...register('pokemon')}/>
+        <button>Searh</button>
     </form>
   )
 }

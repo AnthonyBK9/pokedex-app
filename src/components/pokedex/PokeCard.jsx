@@ -16,7 +16,7 @@ const PokeCard = ({url}) => {
 
   const navigate = useNavigate()
   const clickCard = () => navigate(`/pokedex/${pokemon.id}`)
-  // console.log(pokemon)
+
   bgColor.forEach(bg => {
     if (pokemon?.types[0].type.name === bg.bgColor) {
         return `card-pokemon bg-${bg.bgColor}`;

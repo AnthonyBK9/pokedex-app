@@ -47,7 +47,7 @@ const PokeInfoScreen = () => {
             <div className="pokeinfo-img">
               <img src={pokeInfo?.sprites.other['official-artwork'].front_default} alt={pokeInfo?.name} />
             </div>
-            <h2>#{id}</h2>
+            <h2>#{pokeInfo?.id}</h2>
             <div className="pokeinfo-name">
               <h3>{pokeInfo?.name}</h3>
             </div>
