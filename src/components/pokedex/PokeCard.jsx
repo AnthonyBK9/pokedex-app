@@ -54,14 +54,14 @@ const PokeCard = ({url}) => {
       </div>
         <div className="stats">
           <div className="stat">
-            <p><span>HP:</span> {pokemon?.stats[0].base_stat}</p>
-            <p><span>Defense:</span> {pokemon?.stats[3].base_stat}</p>
-            <p><span>Sp-Attack:</span> {pokemon?.stats[4].base_stat}</p>
+            <p><span className="hp">HP:</span> {pokemon?.stats[0].base_stat}</p>
+            <p><span className="defense">Defense:</span> {pokemon?.stats[3].base_stat}</p>
+            <p><span className="sp-attack">Sp-Attack:</span> {pokemon?.stats[4].base_stat}</p>
           </div>
           <div className="stat">
-            <p><span>Attack:</span> {pokemon?.stats[1].base_stat}</p>
-            <p><span>Speed:</span> {pokemon?.stats[4].base_stat}</p>
-            <p><span>Sp-Defense:</span> {pokemon?.stats[4].base_stat}</p>
+            <p><span className="attack">Attack:</span> {pokemon?.stats[1].base_stat}</p>
+            <p><span className="speed">Speed:</span> {pokemon?.stats[4].base_stat}</p>
+            <p><span className="sp-defense">Sp-Defense:</span> {pokemon?.stats[4].base_stat}</p>
           </div>
         </div>
     </article>

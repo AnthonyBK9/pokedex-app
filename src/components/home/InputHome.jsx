@@ -13,11 +13,14 @@ const InputHome = () => {
   const navigate = useNavigate()
 
   const submit = data => {
-    dispatch(setNameGlobal(data.nameUser))
-    reset({
-      nameUser: ''
-    })
-    navigate('/pokedex')
+    const user = data.nameUser
+    if (user.trim().length > 2) {
+      dispatch(setNameGlobal(user))
+      reset({
+        nameUser: ''
+      })
+      navigate('/pokedex')
+    }
   }
 
   return (

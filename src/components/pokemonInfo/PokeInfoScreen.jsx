@@ -1,17 +1,17 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../header/Header';
 import images from '../../assets/js/images'
 import bgColor from '../../helpers/bgColor'
 import PokeMovements from './PokeMovements';
 
 const PokeInfoScreen = () => {
+
   const { id } = useParams()
-  console.log(id);
-
   const [pokeInfo, setPokeInfo] = useState();
-
+  const navigate = useNavigate()
+  const previus = () => navigate(`/pokedex`);
   useEffect(() => {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
       .then(res => setPokeInfo(res.data))
@@ -38,6 +38,7 @@ const PokeInfoScreen = () => {
     <>
       <Header />
       <article className="pokeinfo">
+      <button className="btn-previus" onClick={previus}><i className="fa-solid fa-circle-left"></i></button>
         <div className="pokemon-img">
           <img src={images[0].img} alt={images[0].name} />
         </div>
@@ -80,7 +81,6 @@ const PokeInfoScreen = () => {
           <div className="poke-movements-section">
             {
               pokeInfo?.moves.map( ({move}) => (
-                // console.log(move.name)
                 <PokeMovements 
                   key={move.url}
                   getMove={move.name}
