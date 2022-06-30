@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const InputPokedex = () => {
 
 
-  const {handleSubmit, reset, register} = useForm()
+  const {handleSubmit, register} = useForm()
   const navigate = useNavigate()
   const submit = (data) => {
     console.log(data)
@@ -15,7 +15,6 @@ const InputPokedex = () => {
   return (
     <form onSubmit={handleSubmit(submit)}>
         <input type="text" placeholder="Searh Pokemon" {...register('pokemon')}/>
-        <button>Searh</button>
     </form>
   )
 }

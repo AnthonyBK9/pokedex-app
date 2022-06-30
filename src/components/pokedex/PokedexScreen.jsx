@@ -6,9 +6,11 @@ import images from '../../assets/js/images'
 import InputPokedex from './InputPokedex'
 import PokePagination from './PokePagination'
 import Header from '../header/Header'
+import SelectPokemon from './SelectPokemon'
+import useTypePokemon from '../../hooks/useTypePokemon'
 
 const PokedexScreen = () => {
-
+  const typePokemons = useTypePokemon();
   const nameUser = useSelector(state => state.nameUser)
   const [pokemons, setPokemons] = useState()
   const [currentPage, setCurrentPage] = useState(1)
@@ -18,7 +20,7 @@ const PokedexScreen = () => {
       .then(res => setPokemons(res.data.results))
       .catch(err => console.log(err))
   }, [])
-  // console.log(pokemons)
+
   let arrPokemons = [];
   const pokemonPerPage = 12;
     if (pokemons?.length <= pokemonPerPage) {
@@ -34,12 +36,10 @@ const PokedexScreen = () => {
   let currentBlock = Math.ceil(currentPage / pagesPerBlock)
     
   if(currentBlock * pagesPerBlock >= quantityPages){
-    // Cuando es el último bloque
     for(let i = currentBlock * pagesPerBlock - pagesPerBlock + 1; i <= quantityPages ;i++) {
       arrPages.push(i)
     }
   } else {
-    // cuando no es el último bloque
     for(let i = currentBlock * pagesPerBlock - pagesPerBlock + 1; i <= currentBlock * pagesPerBlock;i++){
       arrPages.push(i)
     }
@@ -50,7 +50,8 @@ const PokedexScreen = () => {
       <Header />
       <h2 className="poke-user"><span>Hello! {nameUser}</span>, welcome to the Pokedex</h2>
       <div className="input-pokeScreen">
-      <InputPokedex/>
+        <InputPokedex />
+        {/* <SelectPokemon  typePokemons={typePokemons}/> */}
       </div>
       <PokePagination 
         arrPages={arrPages}

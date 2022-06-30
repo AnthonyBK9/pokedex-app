@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { setNameGlobal } from '../../store/slices/nameUser.slice'
 
 
-const InputHome = () => {
+const InputHome = ({setLogged}) => {
 
   const {handleSubmit, reset, register} = useForm()
 
@@ -20,6 +20,7 @@ const InputHome = () => {
         nameUser: ''
       })
       navigate('/pokedex')
+      setLogged(true);
     }
   }
 

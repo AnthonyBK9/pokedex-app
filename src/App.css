@@ -148,7 +148,7 @@ input::placeholder {
     top: 47px;
 }
 
-.circle-a {
+/* .circle-a {
     box-sizing: border-box;
     position: absolute;
     width: 117px;
@@ -170,7 +170,7 @@ input::placeholder {
     background: #212121;
     border: 12px solid #000000;
     border-radius: 50%;
-}
+} */
 
 .card-container {
     display: flex;
@@ -319,6 +319,8 @@ input::placeholder {
 }
 
   /* PokeInfoScreen */
+
+
 
 .pokeinfo {
     background:rgb(199, 236, 235);
