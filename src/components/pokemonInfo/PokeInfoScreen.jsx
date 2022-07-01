@@ -19,7 +19,6 @@ const PokeInfoScreen = () => {
 
   }, [])
   
-  console.log(pokeInfo);
   const poketype = pokeInfo?.types[0].type.name;
   let pokeColor;
   bgColor.forEach(bg => {

@@ -148,30 +148,6 @@ input::placeholder {
     top: 47px;
 }
 
-/* .circle-a {
-    box-sizing: border-box;
-    position: absolute;
-    width: 117px;
-    height: 117px;
-    left: 1138px;
-    top: 78px;
-    background: #FFFFFF;
-    border: 12px solid #000000;
-    border-radius: 50%;
-}
-
-.circle-b {
-    box-sizing: border-box;
-    position: absolute;
-    width: 63px;
-    height: 63px;
-    left: 1165px;
-    top: 105px;
-    background: #212121;
-    border: 12px solid #000000;
-    border-radius: 50%;
-} */
-
 .card-container {
     display: flex;
     justify-content: space-around;
@@ -183,9 +159,8 @@ input::placeholder {
 }
 
 .card-pokemon {
-    border: 4px solid #afafaf;
     border-radius: 10px;
-    width: 21%;
+    width: 20%;
     overflow: hidden;
 }
 
@@ -194,48 +169,48 @@ input::placeholder {
 }
 
 .card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img img {
+    width: 50%;
+}
+
+.card-hp{
+    display: inline-block;
+    width: 60px;
+    background: #fff;
     text-align: center;
+    padding: 3px 1px;
+    border-radius: 30px;
+    position: relative;
+    top: 5%;
+    left: 75%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 700;
 }
 
 .card-content {
     text-align: center;
     padding-right: 40px;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    color: #fff;
+    color: #045b7e;
     padding: 0;
+
 }
 
-.card-content h4 {
-    color: rgb(56, 46, 46);
-    background:rgb(255, 255, 255);
-    width: 20%;
-    margin: 0 auto;
-    padding: 3px 5px;
-    border-radius: 10px;
+.card-content-type {
+    margin: 5px auto;
 }
 
 .card-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.card-type p {
-    padding: 3px 5px;
-}
-
-.type-a {
-    background: #0C0C0C;
-    color: #fff;
-    border-radius: 3px;
-}
-
-.type-b {
-    background: #552f92;
-    color: #fff;
-    border-radius: 3px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 0 30px;
+    padding: 2px 5px;
+    color: white;
+    font-size: 15px;
 }
 
 .card-poke-header img{
@@ -243,27 +218,29 @@ input::placeholder {
     margin: 0 auto;
 }
 
-.card-poke-header h3 {
-    color: white;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
 .stats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     background: #ffffff;
     padding: 5px 6px;
+    font-size: 14px;
+    margin: 5px auto;
 }
 
-.stat p {
-    color: rgb(190, 102, 19);
+.stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-
 .stat span {	
     font-weight: 700;
+}
+
+.stat-last {
+    display: block;
+    position: relative;
+    top: 10px;
 }
 
 /* Pagination */
@@ -428,7 +405,6 @@ input::placeholder {
 }
 
 .pokeinfo-type {
-    /* background:rgb(17, 43, 97); */
     border-radius: 10px;
     margin: 0 30px;
     padding: 4px 10px;
@@ -489,6 +465,132 @@ input::placeholder {
 
 /* ================ Color Pokemon Type ===================== */
 
+.bg-normal-card {
+    background: #735159;
+    background: radial-gradient( circle at 50% 0%, #735159 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #735159;
+    border: 2.5px solid #735159;
+}
+
+.bg-fighting-card {
+    background: #973f26;
+    background: radial-gradient( circle at 50% 0%, #973f26 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #973f26;
+    border: 2.5px solid #973f26;
+}
+
+.bg-flying-card {
+    background: #48677b;
+    background: radial-gradient( circle at 50% 0%, #48677b 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #48677b;
+    border: 2.5px solid #48677b;
+}
+
+.bg-poison-card {
+    background: #5b2d86;
+    background: radial-gradient( circle at 50% 0%, #5b2d86 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #5b2d86;
+    border: 2.5px solid #5b2d86;
+}
+
+.bg-ground-card {
+    background: #765833;
+    background: radial-gradient( circle at 50% 0%, #765833 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #765833;
+    border: 2.5px solid #765833;
+}
+
+.bg-rock-card {
+    background: #361c15;
+    background: radial-gradient( circle at 50% 0%, #361c15 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #361c15;
+    border: 2.5px solid #361c15;
+}
+
+.bg-bug-card {
+    background: #597a33;
+    background: radial-gradient( circle at 50% 0%, #597a33 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #597a33;
+    border: 2.5px solid #597a33;
+}
+
+.bg-ghost-card {
+    background: #222452;
+    background: radial-gradient( circle at 50% 0%, #222452 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #222452;
+    border: 2.5px solid #222452;
+}
+
+.bg-steel-card {
+    background: #5d736c;
+    background: radial-gradient( circle at 50% 0%, #5d736c 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #5d736c;
+    border: 2.5px solid #5d736c;
+}
+
+.bg-fire-card {
+    background: radial-gradient( circle at 50% 0%, #bf3434 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #bf3434;
+    border: 2.5px solid #bf3434;
+}
+
+.bg-water-card {
+    background: #70b7fa;
+    background: radial-gradient( circle at 50% 0%, #70b7fa 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #70b7fa;
+    border: 2.5px solid #70b7fa;
+}
+
+.bg-grass-card {
+    background: radial-gradient( circle at 50% 0%, #21a586 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #21a586;
+    border: 2.5px solid #21a586;
+
+}
+
+.bg-electric-card {
+    background: #fbbd08;
+    background: radial-gradient( circle at 50% 0%, #fbbd08 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #fbbd08;
+    border: 2.5px solid #fbbd08;
+}
+
+.bg-psychic-card {
+    background: #b98544;
+    background: radial-gradient( circle at 50% 0%, #b98544 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #b98544;
+    border: 2.5px solid #b98544;
+}
+
+.bg-ice-card {
+    background: #86d2f4;
+    background: radial-gradient( circle at 50% 0%, #86d2f4 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #86d2f4;
+    border: 2.5px solid #86d2f4;
+}
+
+.bg-dragon-card {
+    background: #448a94;
+    background: radial-gradient( circle at 50% 0%, #448a94 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #448a94;
+    border: 2.5px solid #448a94;
+}
+
+.bg-dark-card {
+    background: #191c1b;
+    background: radial-gradient( circle at 50% 0%, #191c1b 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #191c1b;
+    border: 2.5px solid #191c1b;
+}
+
+.bg-fairy-card {
+    background: #8f2c4e;
+    background: radial-gradient( circle at 50% 0%, #8f2c4e 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #8f2c4e;
+    border: 2.5px solid #8f2c4e;
+}
+
+/* PokeInfo Color */
 .bg-normal {
     background: #735159;
 }
@@ -535,8 +637,6 @@ input::placeholder {
 
 .bg-grass {
     background: #21a586;
-    /* background: rgb(41,134,112); */
-    /* background: linear-gradient(0deg, rgba(162,246,226,1) 0%, rgb(33, 165, 134) 100%); */
 }
 
 .bg-electric {
