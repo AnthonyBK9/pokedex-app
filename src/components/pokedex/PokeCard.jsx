@@ -46,12 +46,14 @@ const PokeCard = ({url}) => {
         </div>
         <div className="card-content">
           <h3>{pokemon?.name}</h3>
+        </div>
+      </div>
+        <div className="card-content">
           <h4>Type</h4>
           <div className="card-type">
             <p>{pokemon?.types[0].type.name} { pokemon?.types[1]?.type.name !== undefined ? `/ ${pokemon?.types[1]?.type.name}`: '' }</p>
           </div>
         </div>
-      </div>
         <div className="stats">
           <div className="stat">
             <p><span className="hp">HP:</span> {pokemon?.stats[0].base_stat}</p>
