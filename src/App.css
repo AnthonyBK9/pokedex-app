@@ -472,11 +472,21 @@ input::placeholder {
     border: 2.5px solid #735159;
 }
 
+.bg-normal-card:hover {
+    box-shadow: 0px 0px 12px 3px #735159;
+    cursor: pointer;
+}
+
 .bg-fighting-card {
     background: #973f26;
     background: radial-gradient( circle at 50% 0%, #973f26 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #973f26;
     border: 2.5px solid #973f26;
+}
+
+.bg-fighting-card:hover {
+    box-shadow: 0px 0px 12px 3px #973f26;
+    cursor: pointer;
 }
 
 .bg-flying-card {
@@ -486,11 +496,21 @@ input::placeholder {
     border: 2.5px solid #48677b;
 }
 
+.bg-flying-card:hover {
+    box-shadow: 0px 0px 12px 3px #48677b;
+    cursor: pointer;
+}
+
 .bg-poison-card {
     background: #5b2d86;
     background: radial-gradient( circle at 50% 0%, #5b2d86 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #5b2d86;
     border: 2.5px solid #5b2d86;
+}
+
+.bg-poison-card:hover {
+    box-shadow: 0px 0px 12px 3px #5b2d86;
+    cursor: pointer;
 }
 
 .bg-ground-card {
@@ -500,11 +520,21 @@ input::placeholder {
     border: 2.5px solid #765833;
 }
 
+.bg-ground-card:hover {
+    box-shadow: 0px 0px 12px 3px #765833;
+    cursor: pointer;
+}
+
 .bg-rock-card {
     background: #361c15;
     background: radial-gradient( circle at 50% 0%, #361c15 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #361c15;
     border: 2.5px solid #361c15;
+}
+
+.bg-rock-card:hover{
+    box-shadow: 0px 0px 12px 3px #361c15;
+    cursor: pointer;
 }
 
 .bg-bug-card {
@@ -514,6 +544,11 @@ input::placeholder {
     border: 2.5px solid #597a33;
 }
 
+.bg-bug-card:hover {
+    box-shadow: 0px 0px 12px 3px #597a33;
+    cursor: pointer;
+}
+
 .bg-ghost-card {
     background: #222452;
     background: radial-gradient( circle at 50% 0%, #222452 46%, #ffffff 36% );
@@ -521,11 +556,20 @@ input::placeholder {
     border: 2.5px solid #222452;
 }
 
+.bg-ghost-card:hover {
+    box-shadow: 0px 0px 12px 3px #222452;
+    cursor: pointer;
+}
+
 .bg-steel-card {
-    background: #5d736c;
     background: radial-gradient( circle at 50% 0%, #5d736c 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #5d736c;
     border: 2.5px solid #5d736c;
+}
+
+.bg-steel-card:hover {
+    box-shadow: 0px 0px 12px 3px #5d736c;
+    cursor: pointer;
 }
 
 .bg-fire-card {
@@ -534,18 +578,31 @@ input::placeholder {
     border: 2.5px solid #bf3434;
 }
 
+.bg-fire-card:hover{
+    box-shadow: 0px 0px 12px 3px #bf3434;
+    cursor: pointer;
+}
+
 .bg-water-card {
-    background: #70b7fa;
     background: radial-gradient( circle at 50% 0%, #70b7fa 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #70b7fa;
     border: 2.5px solid #70b7fa;
+}
+
+.bg-water-card:hover {
+    box-shadow: 0px 0px 12px 3px #70b7fa;
+    cursor: pointer;
 }
 
 .bg-grass-card {
     background: radial-gradient( circle at 50% 0%, #21a586 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #21a586;
     border: 2.5px solid #21a586;
+}
 
+.bg-grass-card:hover {
+    box-shadow: 0px 0px 12px 3px #21a586;
+    cursor: pointer;
 }
 
 .bg-electric-card {
@@ -555,11 +612,21 @@ input::placeholder {
     border: 2.5px solid #fbbd08;
 }
 
+.bg-electric-card:hover {
+    box-shadow: 0px 0px 12px 3px #fbbd08;
+    cursor: pointer;
+}
+
 .bg-psychic-card {
     background: #b98544;
     background: radial-gradient( circle at 50% 0%, #b98544 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #b98544;
     border: 2.5px solid #b98544;
+}
+
+.bg-psychic-card:hover {
+    box-shadow: 0px 0px 12px 3px #b98544;
+    cursor: pointer;
 }
 
 .bg-ice-card {
@@ -569,11 +636,21 @@ input::placeholder {
     border: 2.5px solid #86d2f4;
 }
 
+.bg-ice-card:hover {
+    box-shadow: 0px 0px 12px 3px #86d2f4;
+    cursor: pointer;
+}
+
 .bg-dragon-card {
     background: #448a94;
     background: radial-gradient( circle at 50% 0%, #448a94 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #448a94;
     border: 2.5px solid #448a94;
+}
+
+.bg-dragon-card:hover {
+    box-shadow: 0px 0px 12px 3px #448a94;
+    cursor: pointer;
 }
 
 .bg-dark-card {
@@ -583,11 +660,21 @@ input::placeholder {
     border: 2.5px solid #191c1b;
 }
 
+.bg-dark-card:hover {
+    box-shadow: 0px 0px 12px 3px #191c1b;
+    cursor: pointer;
+}
+
 .bg-fairy-card {
     background: #8f2c4e;
     background: radial-gradient( circle at 50% 0%, #8f2c4e 46%, #ffffff 36% );
     box-shadow: 0px 0px 10px 0px #8f2c4e;
     border: 2.5px solid #8f2c4e;
+}
+
+.bg-fairy-card:hover {
+    box-shadow: 0px 0px 12px 3px #8f2c4e;
+    cursor: pointer;
 }
 
 /* PokeInfo Color */
