@@ -220,7 +220,6 @@ input::placeholder {
 
 .stats {
     font-family: 'Kdam Thmor Pro', sans-serif;
-    background: #ffffff;
     padding: 5px 6px;
     font-size: 14px;
     margin: 5px auto;
@@ -237,12 +236,17 @@ input::placeholder {
     font-weight: 700;
 }
 
-.stat-last {
-    display: block;
-    position: relative;
-    top: 10px;
+.poke-stats {
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
+.poke-stat span {
+    font-weight: 700;
+}
+
+.poke-stat p {
+    color: #979797;    
+}
 /* Pagination */
 
 .pagination-container {
@@ -298,11 +302,8 @@ input::placeholder {
 
   /* PokeInfoScreen */
 
-
-
 .pokeinfo {
     background:rgb(199, 236, 235);
-    /* padding: 20px 0; */
     padding-top: -10px;
     padding-bottom: 50px
 }
@@ -310,8 +311,6 @@ input::placeholder {
 .pokemon-img {
     width: 40%;
     position: relative;
-    /* top: 35px;
-    left: 5%; */
 }
 
 .pokemon-img img {
@@ -401,7 +400,7 @@ input::placeholder {
 }
 
 .stat p {
-    color: rgb(151, 151, 151);
+    color: #979797;
 }
 
 .pokeinfo-type {

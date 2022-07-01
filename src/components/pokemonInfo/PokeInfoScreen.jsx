@@ -61,12 +61,12 @@ const PokeInfoScreen = () => {
             </div>
             <h3>Stats</h3>
             <div className="poke-stats">
-              <div className="stat">
+              <div className="poke-stat">
                 <p><span className="hp">HP:</span> {pokeInfo?.stats[0].base_stat}</p>
                 <p><span className="defense">Defense:</span> {pokeInfo?.stats[3].base_stat}</p>
                 <p><span className="sp-attack">Sp-Attack:</span> {pokeInfo?.stats[4].base_stat}</p>
               </div>
-              <div className="stat">
+              <div className="poke-stat">
                 <p><span className="attack">Attack:</span> {pokeInfo?.stats[1].base_stat}</p>
                 <p><span className="speed">Speed:</span> {pokeInfo?.stats[4].base_stat}</p>
                 <p><span className="sp-defense">Sp-Defense:</span> {pokeInfo?.stats[4].base_stat}</p>
