@@ -15,9 +15,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<HomeScreen setLogged={setLogged}/>} />
-        <Route element={<ProtectedRoutes isLogged={logged} />}>
           <Route path='/pokedex' element={<PokedexScreen />} />
           <Route path='/pokedex/:id' element={<PokeInfoScreen />} />
+        <Route element={<ProtectedRoutes isLogged={logged} />}>
           <Route path='/*' element={<Error404 />} />
         </Route>
       </Routes>

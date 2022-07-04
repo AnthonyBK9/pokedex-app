@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../header/Header';
 import images from '../../assets/js/images'
-import bgColor from '../../helpers/bgColor'
 import PokeMovements from './PokeMovements';
 
 const PokeInfoScreen = () => {
@@ -19,20 +18,9 @@ const PokeInfoScreen = () => {
 
   }, [])
   
-  const poketype = pokeInfo?.types[0].type.name;
-  let pokeColor;
-  bgColor.forEach(bg => {
-    if (bg.bgColor === poketype) {
-      return pokeColor = bg.bgColor;
-    }
-  });
-  const poketype2 = pokeInfo?.types[1]?.type.name;
-  let pokeColor2;
-  bgColor.forEach(bg => {
-    if (bg.bgColor === poketype2) {
-      return pokeColor2 = bg.bgColor;
-    }
-  });
+  const pokeColor = pokeInfo?.types[0].type.name;
+  const pokeColor2 = pokeInfo?.types[1]?.type.name;
+ 
   return (
     <>
       <Header />

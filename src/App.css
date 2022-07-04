@@ -6,15 +6,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 150px;
-    background:rgb(17, 43, 97);
+    background-image: url('../src/assets/img/fondo.jpg');
+    background-size: cover;
     min-height: 100vh;
     margin-top: 0;
 }
 
 .poke-content {	
-    color: #fff;
+    color: rgb(189, 56, 56);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0);
     font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -41,6 +43,7 @@
     width: 30%;
 }
 
+
 .pokedex-title {
     font-family: 'Teko', sans-serif;
     font-weight: 700;
@@ -60,6 +63,7 @@
     height: 25px;
     width: 60%;
     border-radius: 5px 0 0 5px;
+    border: 2px solid #a81313;
 }
 
 input {
@@ -197,7 +201,6 @@ input::placeholder {
     font-family: 'Kdam Thmor Pro', sans-serif;
     color: #045b7e;
     padding: 0;
-
 }
 
 .card-content-type {
@@ -232,6 +235,7 @@ input::placeholder {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .stat span {	
     font-weight: 700;
 }
@@ -251,7 +255,7 @@ input::placeholder {
 
 .pagination-container {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     align-items: center;
     width: max-content;
     margin: 0 auto;
@@ -266,7 +270,22 @@ input::placeholder {
     padding-left: 0;
 }
 
-.pagination-prev-next{
+.pagination-container input{
+    color: #a81313;
+    border: 3px solid #153268;
+    border-radius: 3px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    width: 45px;
+    text-align: center;
+}
+
+input:focus-visible {
+    border: 1px solid blue;
+}
+
+.pagination-next{
     font-size: 30px;
     color: #fcfcfc;
     cursor: pointer;
@@ -275,14 +294,48 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(21, 50, 104);
+    background-color: #153268;
     border-radius: 8px;
+    border: none;
+}
+
+.pagination-prev {
+    font-size: 30px;
+    color: #fcfcfc;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #153268;
+    border-radius: 8px;
+    border: none;
+}
+
+.pagination-prev[disabled] {
+    background-color: #d3d3d3;
+    cursor: no-drop;
+}
+
+.pagination-prev[disabled]:hover {
+    background-color: #d3d3d3;
+    cursor: no-drop;
+}
+
+.pagination-next[disabled] {
+    background-color: #d3d3d3;
+    cursor: no-drop;
+}
+
+.pagination-next[disabled]:hover {
+    background-color: #d3d3d3;
+    cursor: no-drop;
 }
   
 .page-number {
     font-size: 30px;
     color: #ffffff;
-    cursor: pointer;
     width: 40px;
     aspect-ratio: 1;
     display: flex;
@@ -292,12 +345,18 @@ input::placeholder {
     background: #163f8b;
 }
 
-.page-number:hover, .pagination-prev-next:hover {
-    background: #ce1919;
+.page {
+    font-size: 30px;
+    color: #163f8b;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
 }
 
-.page-active{
-    background-color: #ce1919;
+.pagination-prev:hover, .pagination-next:hover {
+    background: #ce1919;
 }
 
   /* PokeInfoScreen */
@@ -602,6 +661,8 @@ input::placeholder {
 .bg-grass-card:hover {
     box-shadow: 0px 0px 12px 3px #21a586;
     cursor: pointer;
+    /* transform: scale(1.1);
+    transition: all 1s; */
 }
 
 .bg-electric-card {
