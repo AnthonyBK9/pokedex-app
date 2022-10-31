@@ -295,7 +295,6 @@ input::placeholder {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
     }
     .poke-stat:nth-child(1){
         margin-left: -1.2rem;
