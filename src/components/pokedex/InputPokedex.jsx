@@ -4,20 +4,14 @@ import { useNavigate } from 'react-router-dom'
 
 const InputPokedex = ({setPokeSearch}) => {
 
-
-  // const {handleSubmit, register} = useForm()
-  // const navigate = useNavigate()
-  // const submit = (data) => {
-  //   console.log(data)
-  //   navigate(`/pokedex/${data.pokemon}`)
-  // }
-
   const changeInput = e => {
     setPokeSearch(e.target.value)
   }
   return (
     <form>
+      <div className="form-input">
         <input type="text" placeholder="Searh Pokemon" onChange={changeInput}/>
+      </div>
     </form>
   )
 }

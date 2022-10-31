@@ -36,26 +36,26 @@ const PokedexScreen = () => {
         <InputPokedex setPokeSearch={setPokeSearch} />
       </div>
       <PokePagination page={page} setPage={setPage} max={max}/>
-      <div className="card-container">
-        {
-          filterPokemon ?
-            filterPokemon.slice((page - 1) * getPage, (page - 1) * getPage + getPage)
-            .map( pokemon => (
+        <div className="card-container">
+          {
+            filterPokemon ?
+              filterPokemon.slice((page - 1) * getPage, (page - 1) * getPage + getPage)
+              .map( pokemon => (
+                <PokeCard 
+                  key={pokemon.url}
+                  url={pokemon.url}
+                />
+              ))
+            :
+            pokemons?.slice((page - 1) * getPage, (page - 1) * getPage + getPage)
+            .map(pokemon => (
               <PokeCard 
                 key={pokemon.url}
                 url={pokemon.url}
               />
             ))
-          :
-          pokemons?.slice((page - 1) * getPage, (page - 1) * getPage + getPage)
-          .map(pokemon => (
-            <PokeCard 
-              key={pokemon.url}
-              url={pokemon.url}
-            />
-          ))
-        }
-      </div>
+          }
+        </div>
     </div>
   )
 }
